@@ -1,0 +1,139 @@
+REM   Script: Fantastic Foods
+REM   Fantastic Foods
+
+CREATE TABLE best_restaurants 
+( 
+	restaurant_rank	NUMBER(2), 
+	restaurant_name	VARCHAR2(20), 
+	country_name	VARCHAR2(20), 
+	CONSTRAINT pk_restaurant_rank PRIMARY KEY (restaurant_rank) 
+);
+
+CREATE TABLE popular_foods 
+( 
+	food_rank	NUMBER(2), 
+	food_name	VARCHAR(20), 
+	country_name	VARCHAR(20), 	 
+	CONSTRAINT pk_food_rank PRIMARY KEY (food_rank) 
+);
+
+INSERT INTO best_restaurants VALUES 
+	(1 
+	, 'Noma' 
+	, 'Denmark' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(2 
+	, 'Gernamium' 
+	, 'Denmark' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(3 
+	, 'Asador Etxebarri' 
+	, 'Spain' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(4 
+	, 'Central' 
+	, 'Peru' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(5 
+	, 'Disfrutar' 
+	, 'Spain' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(6 
+	, 'Frantzen' 
+	, 'Sweden' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(7 
+	, 'Maido' 
+	, 'Peru' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(8 
+	, 'Odette' 
+	, 'Singapore' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(9 
+	, 'Pujol' 
+	, 'Mexico' 
+	);
+
+INSERT INTO best_restaurants VALUES 
+	(10 
+	, 'The Chairman' 
+	, 'China' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(1 
+	, 'Pizza' 
+	, 'Italy' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(2 
+	, 'Sushi' 
+	, 'Japan' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(3 
+	, 'Burger' 
+	, 'USA' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(4 
+	, 'Tacos' 
+	, 'Mexico' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(5 
+	, 'Ramen' 
+	, 'Japan' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(6 
+	, 'Cellophane Noodles' 
+	, 'China' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(7 
+	, 'Tofu' 
+	, 'China' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(8 
+	, 'Croissant' 
+	, 'France' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(9 
+	, 'Tortilla' 
+	, 'Mexico' 
+	);
+
+INSERT INTO popular_foods VALUES 
+	(10 
+	, 'Spaghetti' 
+	, 'Italy' 
+	);
+
