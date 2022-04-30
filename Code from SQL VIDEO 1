@@ -1,0 +1,23 @@
+--All code from SQL Video 1
+--Code to create tables and insert values are listed elsewhere in the repository
+
+--shows all create tables from text editor/ where it was uploadeds in myscripts
+--show distinct to show that only six countries made up the top ten list
+
+SELECT * FROM time_cost;
+SELECT * FROM popular_foods;
+SELECT * FROM best_restaurants;
+
+-- Select all from best restaurants for stores in Peru or Denmark from worst rating to best
+
+SELECT * FROM best_restaurants  
+WHERE country_name = 'Peru' OR country_name='Denmark'
+ORDER BY store_rating DESC;
+
+--Pulls up popular_foods table
+-- Goes over popular_foods table with no repeats
+
+
+SELECT * FROM popular_foods;
+
+SELECT DISTINCT country_name from popular_foods;
