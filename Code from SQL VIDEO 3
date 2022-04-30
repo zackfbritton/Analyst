@@ -1,0 +1,15 @@
+--Code from SQL VIDEO 3
+
+-- show department table and employee table
+
+SELECT * FROM dept_tab;
+SELECT * FROM emp_tab;
+
+
+
+-- Shows hire dates in different departments
+
+SELECT dept_tab.dname, emp_tab.hiredate
+From dept_tab
+JOIN emp_tab
+ON dept_tab.deptno = emp_tab.deptno;
