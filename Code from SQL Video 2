@@ -1,0 +1,28 @@
+--The code creating the tables is listed in the 'Popular Foods' and 'Food Data Code' links in the repository
+
+
+
+--Pulls up time_ cost table
+
+SELECT* time_cost;
+
+
+
+--Average cost of each restaurant in the top 10 list
+
+SELECT AVG(meal_cost) from time_cost;
+
+
+
+--Looks at restaurants within a specific price range
+
+SELECT*from time_cost where meal_cost between 84 and 124;
+
+
+-Updates a string value in the table
+
+UPDATE best_restaurants
+SET restaurant_name = 'Geranium'
+WHERE store_rating=2;
+
+SELECT*FROM best_restaurants;
