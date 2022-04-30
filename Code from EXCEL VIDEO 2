@@ -1,0 +1,4 @@
+=CONCATENATE("Hi ",H7,",",CHAR(10),CHAR(10),"Please call ",A7," ",B7," at ",C7," at ",E7,".",CHAR(10),CHAR(10)," Additional notes: ",G7,".",CHAR(10),CHAR(10),"Thank you, ",CHAR(10),F7)
+
+
+=HYPERLINK("mailto:"&I6&+"?subject="&F6&+" Referral "&" &body=  "&J6,"  Send Email")
