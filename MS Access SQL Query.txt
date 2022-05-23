@@ -1,0 +1,3 @@
+SELECT Customers.[First Name], Customers.[Last Name], Customers.Address, Customers.City, Customers.State, Customers.Zip, Customers.Country, Customers.Country, Orders.[Order Date], Orders.[Cookies Ordered], Orders.[Order Filled]
+FROM Customers INNER JOIN Orders ON Customers.[Customer ID] = Orders.[Customer ID]
+WHERE (((Orders.[Order Filled])=No));
